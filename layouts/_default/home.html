@@ -1,0 +1,21 @@
+{{ define "main" }}
+  {{ with .Params.description }}
+    <p>Description: {{ . }}</p>
+  {{ end }}
+  {{ with or .Params.url .Params.details }}
+    <hr>
+  {{ end }}
+  {{ .Content }}
+
+  <ul>
+    <li>
+      <a href="/">Home</a>
+      <ul>
+        {{ range site.Sections }}
+          <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+      </ul>
+    </li>
+  </ul>
+  
+{{ end }}

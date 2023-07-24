@@ -1,0 +1,4 @@
+baseURL = '/'
+languageCode = 'en-US'
+title = 'Hugo Layouts'
+disableKinds = ['RSS','sitemap','taxonomy','term']
