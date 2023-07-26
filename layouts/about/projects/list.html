@@ -1,11 +1,11 @@
 {{ define "main" }}
   <h1>Sub-section: {{ .Title }}</h1>
-  <div class="debug">about/projects/list.html</div>
+  <div class="debug"><b>Template:</b> about/projects/list.html</div>
   {{ .Content }}
 
   <ul>
   {{ range .Pages }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    <li>About – Projects – <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
   {{ end }}
   </ul>
 

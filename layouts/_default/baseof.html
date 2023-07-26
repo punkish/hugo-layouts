@@ -51,13 +51,13 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>{{ site.Title }}</h1>
-    <div class="debug">_default/baseof.html</div>
-    <hr>
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
+    <header>
+        <h1><a href="/">{{ site.Title }}</a></h1>
+        <div class="debug"><b>Template:</b> _default/baseof.html</div>
+        <hr>
+    </header>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
 </body>
 </html>

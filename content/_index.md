@@ -6,3 +6,5 @@ draft = false
 details = ''
 description = "Hugo layout lookup doesn't follow the content layout"
 +++
+
+content/_index.md

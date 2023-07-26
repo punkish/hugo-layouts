@@ -1,21 +1,17 @@
 {{ define "main" }}
-  {{ with .Params.description }}
-    <p>Description: {{ . }}</p>
-  {{ end }}
-  {{ with or .Params.url .Params.details }}
-    <hr>
-  {{ end }}
-  {{ .Content }}
+    {{ with .Params.description }}
+        <p>Description: {{ . }}</p>
+    {{ end }}
 
-  <ul>
-    <li>
-      <a href="/">Home</a>
-      <ul>
+    {{ with or .Params.url .Params.details }}
+        <hr>
+    {{ end }}
+
+    {{ .Content }}
+
+    <ul>
         {{ range site.Sections }}
-          <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
         {{ end }}
-      </ul>
-    </li>
-  </ul>
-  
+    </ul>
 {{ end }}
