@@ -7,6 +7,8 @@ details = ''
 description = "Hugo layout lookup order"
 +++
 
+see [Hugo discourse post](https://discourse.gohugo.io/t/multi-level-branch-bundle-works-but-doesnt-use-corresponding-level-layouts/45434) for details
+
 {{< rawhtml >}}
 <table>
 <tbody>
