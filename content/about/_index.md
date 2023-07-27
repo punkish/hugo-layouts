@@ -42,8 +42,6 @@ layouts
 │   └── single.html
 ├── about
 │   ├── <span class="active">list.html</span>
-│   ├── projects-list.html
-│   ├── projects-single.html
 │   └── single.html
 ├── partials
 └── shortcodes

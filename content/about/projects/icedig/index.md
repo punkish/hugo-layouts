@@ -2,7 +2,7 @@
 title = 'Icedig'
 date = 2023-07-20T11:29:41-07:00
 draft = false
-layout = 'projects-single'
+#layout = 'projects-single'
 +++
 
 {{< rawhtml >}}
@@ -43,9 +43,10 @@ layouts
 │   └── single.html
 ├── about
 │   ├── list.html
-│   ├── projects-list.html
-│   ├── <span class="active">projects-single.html</span>
 │   └── single.html
+├── projects
+│   ├── list.html
+│   └── <span class="active">single.html</span>
 ├── partials
 └── shortcodes
 </td>

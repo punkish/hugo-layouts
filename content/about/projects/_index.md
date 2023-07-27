@@ -3,8 +3,17 @@ title = 'Projects'
 date = 2023-07-20T11:29:11-07:00
 draft = false
 [cascade]
-layout = 'projects-list'
+    type = 'projects'
 +++
+
+
+```
+# frontmatter in content/projects/_index.md
+# this enables all children of *projects* to use 
+# layouts/projects/<list|single>.html
+[cascade]
+    type = 'projects'
+```
 
 {{< rawhtml >}}
 <table>
@@ -44,8 +53,9 @@ layouts
 │   └── single.html
 ├── about
 │   ├── list.html
-│   ├── <span class="active">projects-list.html</span>
-│   ├── projects-single.html
+│   └── single.html
+├── projects
+│   ├── <span class="active">list.html</span>
 │   └── single.html
 ├── partials
 └── shortcodes

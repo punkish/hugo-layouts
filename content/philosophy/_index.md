@@ -42,8 +42,9 @@ layouts
 │   └── single.html
 ├── about
 │   ├── list.html
-│   ├── projects-list.html
-│   ├── projects-single.html
+│   └── single.html
+├── projects
+│   ├── list.html
 │   └── single.html
 ├── partials
 └── shortcodes
