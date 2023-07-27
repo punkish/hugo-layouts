@@ -4,8 +4,12 @@
   {{ .Content }}
 
   <ul>
-  {{ range .Pages }}
-    <li>About – <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-  {{ end }}
+    <li>Section – About
+      <ul>
+        {{ range .Pages }}
+          <li>Subsection – <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+      </ul>
+    </li>
 </ul>
 {{ end }}

@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <h1>Subsection List: {{ .Title }}</h1>
+    <div class="debug"><b>Template:</b> about/projects-list.html</div>
+    {{ .Content }}
+
+    <ul>
+    {{ range .Pages }}
+        <li>📦 About – Projects – <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
+    </ul>
+{{ end }}

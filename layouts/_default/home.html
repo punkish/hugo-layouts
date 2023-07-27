@@ -3,15 +3,11 @@
         <p>Description: {{ . }}</p>
     {{ end }}
 
-    {{ with or .Params.url .Params.details }}
-        <hr>
-    {{ end }}
-
     {{ .Content }}
 
     <ul>
         {{ range site.Sections }}
-            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+            <li>Section – <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
         {{ end }}
     </ul>
 {{ end }}

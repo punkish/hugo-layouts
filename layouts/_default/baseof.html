@@ -24,6 +24,10 @@
       max-width: 768px;
     }
 
+    header {
+      border-bottom: 1px solid black;
+    }
+
     a {
       color: blue;
       text-decoration: none;
@@ -38,8 +42,18 @@
       margin-right: 0.2em;
     }
 
+    .always-active {
+      background-color: lightgreen;
+      border: 1px solid grey;
+      padding: 2px;
+      border-radius: 2px;
+    }
+
     .active {
       background-color: yellow;
+      border: 1px solid grey;
+      padding: 2px;
+      border-radius: 2px;
     }
 
     .ancestor {
@@ -47,14 +61,20 @@
     }
     div.debug {
       background-color: lightgreen;
+      /* display: none; */
+    }
+
+    td.tree {
+      padding: 1rem;
+      font-size: 8px;
+      vertical-align: top;
     }
   </style>
 </head>
 <body>
     <header>
-        <h1><a href="/">{{ site.Title }}</a></h1>
+        <h1><a href="/">🏠 {{ site.Title }}</a></h1>
         <div class="debug"><b>Template:</b> _default/baseof.html</div>
-        <hr>
     </header>
     <main>
         {{ block "main" . }}{{ end }}
